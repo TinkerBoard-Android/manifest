@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="github"
-          fetch=".."
+          fetch="https://github.com/"
            review="https://github.com/" />
 
   <remote name="aosp"
@@ -30,8 +30,8 @@
   </project>
   <project path="cts" name="TinkerBoard-Android/cts" />
   <project path="dalvik" name="TinkerBoard-Android/dalvik" />
-  <project path="developers/build" name="TinkerBoard-Android/developers/build" />
-  <project path="developers/demos" name="TinkerBoard-Android/developers/demos" />
+  <project path="developers/build" name="TinkerBoard-Android/developers_build" />
+  <project path="developers/demos" name="TinkerBoard-Android/developers_demos" />
   <project path="developers/samples/android" name="TinkerBoard-Android/developers_samples_android" />
   <project path="development" name="TinkerBoard-Android/development" />
   <project path="device/common" name="TinkerBoard-Android/device_common" />
@@ -54,21 +54,21 @@
   <project path="device/google/accessory/demokit" name="TinkerBoard-Android/device_google_accessory_demokit" />
   <project path="device/google/atv" name="TinkerBoard-Android/device_google_atv" />
   <project path="device/google/contexthub" name="TinkerBoard-Android/device_google_contexthub" />
-  <project path="device/rockchip/common" name="TinkerBoard-Android/rk/device_rockchip_rksdk" >
+  <project path="device/rockchip/common" name="TinkerBoard-Android/device_rockchip_common" >
     <copyfile src=".classpath" dest=".classpath" />
     <copyfile src="mkimage.sh" dest="mkimage.sh" />
     <copyfile src="javaenv.sh" dest="javaenv.sh" />
   </project>
-  <project path="device/rockchip/rk3288" name="TinkerBoard-Android/rk/device_rockchip_rk3288" >
+  <project path="device/rockchip/rk3288" name="TinkerBoard-Android/device_rockchip_rk3288" >
     <copyfile src="buildspec-rk3288-mid.mk" dest="buildspec.mk" />
     <copyfile src="build.sh" dest="build.sh" />
   </project>
   <project path="device/sample" name="TinkerBoard-Android/device_sample" />
-  <project path="docker_builder" name="DevOps/docker_builder" />
+  <project path="docker_builder" name="TinkerBoard-Android/docker_builder" />
   <project path="docs/source.android.com" name="TinkerBoard-Android/docs_source.android.com" />
   <project path="external/ImageMagick" name="TinkerBoard-Android/external_ImageMagick" />
   <project path="external/aac" name="TinkerBoard-Android/external_aac" />
-  <project path="external/abc" name="TinkerBoard-Android/rk_platform_external_abc" />
+  <project path="external/abc" name="TinkerBoard-Android/external_abc" />
   <project path="external/android-clat" name="TinkerBoard-Android/external_android-clat" />
   <project path="external/androidplot" name="TinkerBoard-Android/external_androidplot" />
   <project path="external/ant-glob" name="TinkerBoard-Android/external_ant-glob" />
@@ -116,7 +116,7 @@
   <project path="external/droiddriver" name="TinkerBoard-Android/external_droiddriver" />
   <project path="external/e2fsprogs" name="TinkerBoard-Android/external_e2fsprogs" />
   <project path="external/easymock" name="TinkerBoard-Android/external_easymock" />
-  <project path="external/eclipse-basebuilder" name="TinkerBoard-Android/external_eclipse-basebuilder" />
+  <!--project path="external/eclipse-basebuilder" name="TinkerBoard-Android/external_eclipse-basebuilder" /-->
   <project path="external/eclipse-windowbuilder" name="TinkerBoard-Android/external_eclipse-windowbuilder" />
   <project path="external/eigen" name="TinkerBoard-Android/external_eigen" />
   <project path="external/elfutils" name="TinkerBoard-Android/external_elfutils" />
@@ -137,7 +137,7 @@
   <project path="external/glide" name="TinkerBoard-Android/external_glide" />
   <project path="external/gmock" name="TinkerBoard-Android/external_gmock" />
   <project path="external/google-benchmark" name="TinkerBoard-Android/external_google-benchmark" />
-  <project path="external/google-breakpad" name="TinkerBoard-Android/external_google-breakpad" />
+  <!--project path="external/google-breakpad" name="TinkerBoard-Android/external_google-breakpad" /-->
   <project path="external/google-fonts/carrois-gothic-sc" name="TinkerBoard-Android/external_google-fonts_carrois-gothic-sc" />
   <project path="external/google-fonts/coming-soon" name="TinkerBoard-Android/external_google-fonts_coming-soon" />
   <project path="external/google-fonts/cutive-mono" name="TinkerBoard-Android/external_google-fonts_cutive-mono" />
@@ -152,7 +152,7 @@
   <project path="external/hyphenation-patterns" name="TinkerBoard-Android/external_hyphenation-patterns" />
   <project path="external/icu" name="TinkerBoard-Android/external_icu" />
   <project path="external/ims" name="TinkerBoard-Android/external_ims" />
-  <project path="external/io" name="TinkerBoard-Android/rk/platform/external_io" />
+  <project path="external/io" name="TinkerBoard-Android/external_io" />
   <project path="external/iproute2" name="TinkerBoard-Android/external_iproute2" />
   <project path="external/ipsec-tools" name="TinkerBoard-Android/external_ipsec-tools" />
   <project path="external/iptables" name="TinkerBoard-Android/external_iptables" />
@@ -248,7 +248,7 @@
   <project path="external/nist-pkits" name="TinkerBoard-Android/external_nist-pkits" />
   <project path="external/nist-sip" name="TinkerBoard-Android/external_nist-sip" />
   <project path="external/noto-fonts" name="TinkerBoard-Android/external_noto-fonts" />
-  <project path="external/ntfs-3g" name="TinkerBoard-Android/rk/platform/external_ntfs-3g" />
+  <project path="external/ntfs-3g" name="TinkerBoard-Android/external_ntfs-3g" />
   <project path="external/oauth" name="TinkerBoard-Android/external_oauth" />
   <project path="external/objenesis" name="TinkerBoard-Android/external_objenesis" />
   <project path="external/okhttp" name="TinkerBoard-Android/external_okhttp" />
@@ -264,7 +264,7 @@
   <project path="external/protobuf" name="TinkerBoard-Android/external_protobuf" />
   <project path="external/regex-re2" name="TinkerBoard-Android/external_regex-re2" />
   <project path="external/replicaisland" name="TinkerBoard-Android/external_replicaisland" />
-  <project path="external/rk-pcba-test" name="TinkerBoard-Android/rk/platform/external_rk-pcba-test" />
+  <project path="external/rk-pcba-test" name="TinkerBoard-Android/external_rk-pcba-test" />
   <project path="external/rmi4utils" name="TinkerBoard-Android/external_rmi4utils" />
   <project path="external/robolectric" name="TinkerBoard-Android/external_robolectric" />
   <project path="external/roboto-fonts" name="TinkerBoard-Android/external_roboto-fonts" />
@@ -309,7 +309,7 @@
   <project path="external/vulkan-validation-layers" name="TinkerBoard-Android/external_vulkan-validation-layers" />
   <project path="external/webp" name="TinkerBoard-Android/external_webp" />
   <project path="external/webrtc" name="TinkerBoard-Android/external_webrtc" />
-  <project path="external/wlan_loader" name="TinkerBoard-Android/rk_platform_external_wlan_loader" />
+  <project path="external/wlan_loader" name="TinkerBoard-Android/external_wlan_loader" />
   <project path="external/wpa_supplicant_8" name="TinkerBoard-Android/external_wpa_supplicant_8" />
   <project path="external/xmlrpcpp" name="TinkerBoard-Android/external_xmlrpcpp" />
   <project path="external/xmlwriter" name="TinkerBoard-Android/external_xmlwriter" />
@@ -318,7 +318,7 @@
   <project path="external/zopfli" name="TinkerBoard-Android/external_zopfli" />
   <project path="external/zxing" name="TinkerBoard-Android/external_zxing" />
   <project path="frameworks/av" name="TinkerBoard-Android/frameworks_av" />
-  <project path="frameworks/base" name="TinkerBoard-Android/rk/frameworks_base" />
+  <project path="frameworks/base" name="TinkerBoard-Android/frameworks_base" />
   <project path="frameworks/compile/libbcc" name="TinkerBoard-Android/frameworks_compile_libbcc" />
   <project path="frameworks/compile/mclinker" name="TinkerBoard-Android/frameworks_compile_mclinker" />
   <project path="frameworks/compile/slang" name="TinkerBoard-Android/frameworks_compile_slang" />
@@ -364,15 +364,15 @@
   <project path="hardware/intel/common/libstagefrighthw" name="TinkerBoard-Android/hardware_intel_common_libstagefrighthw" />
   <project path="hardware/intel/common/libva" name="TinkerBoard-Android/hardware_intel_common_libva" />
   <project path="hardware/intel/common/libwsbm" name="TinkerBoard-Android/hardware_intel_common_libwsbm" />
-  <project path="hardware/intel/common/omx-components" name="TinkerBoard-Android/hardware_intel_common/omx-components" />
-  <project path="hardware/intel/common/utils" name="TinkerBoard-Android/hardware_intel_common/utils" />
+  <project path="hardware/intel/common/omx-components" name="TinkerBoard-Android/hardware_intel_common_omx-components" />
+  <project path="hardware/intel/common/utils" name="TinkerBoard-Android/hardware_intel_common_utils" />
   <project path="hardware/intel/common/wrs_omxil_core" name="TinkerBoard-Android/hardware_intel_common_wrs_omxil_core" />
   <project path="hardware/intel/img/hwcomposer" name="TinkerBoard-Android/hardware_intel_img_hwcomposer" />
   <project path="hardware/intel/img/psb_headers" name="TinkerBoard-Android/hardware_intel_img_psb_headers" />
   <project path="hardware/intel/img/psb_video" name="TinkerBoard-Android/hardware_intel_img_psb_video" />
   <project path="hardware/intel/sensors" name="TinkerBoard-Android/hardware_intel_sensors" />
   <project path="hardware/invensense" name="TinkerBoard-Android/hardware_invensense" />
-  <project path="hardware/libhardware" name="TinkerBoard-Android/rk/hardware_libhardware" />
+  <project path="hardware/libhardware" name="TinkerBoard-Android/hardware_libhardware" />
   <project path="hardware/libhardware_legacy" name="TinkerBoard-Android/hardware_libhardware_legacy" />
   <project path="hardware/marvell/bt" name="TinkerBoard-Android/hardware_marvell_bt" />
   <project path="hardware/qcom/audio" name="TinkerBoard-Android/hardware_qcom_audio" />
@@ -393,23 +393,23 @@
   <project path="hardware/qcom/wlan" name="TinkerBoard-Android/hardware_qcom_wlan" />
   <project path="hardware/realtek" name="TinkerBoard-Android/hardware_realtek" />
   <project path="hardware/ril" name="TinkerBoard-Android/hardware_ril" />
-  <project path="hardware/rockchip/audio" name="TinkerBoard-Android/rk_hardware_rockchip_audio" />
-  <project path="hardware/rockchip/camera" name="TinkerBoard-Android/rk_hardware_rk29_camera" />
-  <project path="hardware/rockchip/hdmicec" name="TinkerBoard-Android/rk_hardware_rk29_hdmicec" />
-  <project path="hardware/rockchip/hwcomposer" name="TinkerBoard-Android/rk_hardware_rk29_hwcomposer_rga" />
-  <project path="hardware/rockchip/jpeghw" name="TinkerBoard-Android/rk_hardware_rk29_jpeghw" />
-  <project path="hardware/rockchip/libgralloc" name="TinkerBoard-Android/rk_hardware_rk29_libgralloc_ump" />
-  <project path="hardware/rockchip/libiep" name="TinkerBoard-Android/rk_hardware_rk29_libiep" />
-  <project path="hardware/rockchip/liblights" name="TinkerBoard-Android/rk_hardware_rk29_liblights" />
-  <project path="hardware/rockchip/librga" name="TinkerBoard-Android/rk_hardware_rk29_librga" />
-  <project path="hardware/rockchip/librkvpu" name="TinkerBoard-Android/rk_hardware_rk29_librkvpu" />
-  <project path="hardware/rockchip/omx_il" name="TinkerBoard-Android/rk_hardware_rk29_omx_il" />
-  <project path="hardware/rockchip/power" name="TinkerBoard-Android/rk_hardware_rk29_power" />
-  <project path="hardware/rockchip/sensor" name="TinkerBoard-Android/rk_hardware_rk29_sensor" />
+  <project path="hardware/rockchip/audio" name="TinkerBoard-Android/hardware_rockchip_audio" />
+  <project path="hardware/rockchip/camera" name="TinkerBoard-Android/hardware_rockchip_camera" />
+  <project path="hardware/rockchip/hdmicec" name="TinkerBoard-Android/hardware_rockchip_hdmicec" />
+  <project path="hardware/rockchip/hwcomposer" name="TinkerBoard-Android/hardware_rockchip_hwcomposer" />
+  <project path="hardware/rockchip/jpeghw" name="TinkerBoard-Android/hardware_rockchip_jpeghw" />
+  <project path="hardware/rockchip/libgralloc" name="TinkerBoard-Android/hardware_rockchip_libgralloc" />
+  <project path="hardware/rockchip/libiep" name="TinkerBoard-Android/hardware_rockchip_libiep" />
+  <project path="hardware/rockchip/liblights" name="TinkerBoard-Android/hardware_rockchip_liblights" />
+  <project path="hardware/rockchip/librga" name="TinkerBoard-Android/hardware_rockchip_librga" />
+  <project path="hardware/rockchip/librkvpu" name="TinkerBoard-Android/hardware_rockchip_librkvpu" />
+  <project path="hardware/rockchip/omx_il" name="TinkerBoard-Android/hardware_rockchip_omx_il" />
+  <project path="hardware/rockchip/power" name="TinkerBoard-Android/hardware_rockchip_power" />
+  <project path="hardware/rockchip/sensor" name="TinkerBoard-Android/hardware_rockchip_sensor" />
   <project path="hardware/ti/omap3" name="TinkerBoard-Android/hardware_ti_omap3" />
-  <project path="hardware/ti/omap4-aah" name="TinkerBoard-Android/hardware/ti_omap4-aah" />
-  <project path="hardware/ti/omap4xxx" name="TinkerBoard-Android/hardware/ti_omap4xxx" />
-  <project path="kernel" name="TinkerBoard-Android/rk_kernel" />
+  <project path="hardware/ti/omap4-aah" name="TinkerBoard-Android/hardware_ti_omap4-aah" />
+  <project path="hardware/ti/omap4xxx" name="TinkerBoard-Android/hardware_ti_omap4xxx" />
+  <project path="kernel" name="TinkerBoard-Android/kernel" />
   <project path="libcore" name="TinkerBoard-Android/libcore" />
   <project path="libnativehelper" name="TinkerBoard-Android/libnativehelper" />
   <project path="ndk" name="TinkerBoard-Android/ndk" />
@@ -491,21 +491,21 @@
   <project path="pdk" name="TinkerBoard-Android/pdk" />
   <project path="platform_testing" name="TinkerBoard-Android/platform_testing" />
   <project path="prebuilts/android-emulator" name="TinkerBoard-Android/prebuilts_android-emulator" />
-  <project path="prebuilts/clang/darwin-x86/host/3.6" name="TinkerBoard-Android/prebuilts_clang_darwin-x86/host/3.6" />
+  <project path="prebuilts/clang/darwin-x86/host/3.6" name="TinkerBoard-Android/prebuilts_clang_darwin-x86_host_3.6" />
   <project path="prebuilts/clang/host/darwin-x86" name="TinkerBoard-Android/prebuilts_clang_host_darwin-x86" />
-  <project path="prebuilts/clang/host/linux-x86" name="TinkerBoard-Android/prebuilts_clang/host_linux-x86" />
-  <project path="prebuilts/clang/linux-x86/host/3.6" name="TinkerBoard-Android/prebuilts_clang_linux-x86_host/3.6" />
+  <project path="prebuilts/clang/host/linux-x86" name="TinkerBoard-Android/prebuilts_clang_host_linux-x86" />
+  <project path="prebuilts/clang/linux-x86/host/3.6" name="TinkerBoard-Android/prebuilts_clang_linux-x86_host_3.6" />
   <project path="prebuilts/deqp" name="TinkerBoard-Android/prebuilts_deqp" />
   <project path="prebuilts/devtools" name="TinkerBoard-Android/prebuilts_devtools" />
-  <project path="prebuilts/eclipse" name="TinkerBoard-Android/prebuilts_eclipse" />
+  <!--project path="prebuilts/eclipse" name="TinkerBoard-Android/prebuilts_eclipse" /-->
   <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="TinkerBoard-Android/prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" name="TinkerBoard-Android/prebuilts_gcc_darwin-x86_arm_arm-eabi-4.8" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="TinkerBoard-Android/prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
-  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="TinkerBoard-Android/prebuilts/gcc_darwin-x86_host_i686-apple-darwin-4.2.1" />
-  <project path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" name="TinkerBoard-Android/prebuilts/gcc_darwin-x86_mips_mips64el-linux-android-4.9" />
-  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="TinkerBoard-Android/prebuilts/gcc_darwin-x86_x86_x86_64-linux-android-4.9" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="TinkerBoard-Android/prebuilts/gcc_linux-x86_aarch64_aarch64-linux-android-4.9" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="TinkerBoard-Android/prebuilts/gcc_linux-x86_arm_arm-eabi-4.8" />
+  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="TinkerBoard-Android/prebuilts_gcc_darwin-x86_host_i686-apple-darwin-4.2.1" />
+  <project path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" name="TinkerBoard-Android/prebuilts_gcc_darwin-x86_mips_mips64el-linux-android-4.9" />
+  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="TinkerBoard-Android/prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="TinkerBoard-Android/prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="TinkerBoard-Android/prebuilts_gcc_linux-x86_arm_arm-eabi-4.8" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="TinkerBoard-Android/prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="TinkerBoard-Android/prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.11-4.8" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="TinkerBoard-Android/prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.15-4.8" />
@@ -525,10 +525,10 @@
   <project path="prebuilts/ninja/linux-x86" name="TinkerBoard-Android/prebuilts_ninja_linux-x86" />
   <project path="prebuilts/python/darwin-x86/2.7.5" name="TinkerBoard-Android/prebuilts_python_darwin-x86_2.7.5" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="TinkerBoard-Android/prebuilts_python_linux-x86_2.7.5" />
-  <project path="prebuilts/qemu-kernel" name="TinkerBoard-Android/prebuilts_qemu-kernel" />
-  <project path="prebuilts/sdk" name="TinkerBoard-Android/prebuilts_sdk" />
-  <project path="prebuilts/tools" name="TinkerBoard-Android/prebuilts_tools" />
-  <project path="rkst" name="TinkerBoard-Android/rk_rkst" />
+  <!--project path="prebuilts/qemu-kernel" name="TinkerBoard-Android/prebuilts_qemu-kernel" /-->
+  <!--project path="prebuilts/sdk" name="TinkerBoard-Android/prebuilts_sdk" /-->
+  <!--project path="prebuilts/tools" name="TinkerBoard-Android/prebuilts_tools" /-->
+  <project path="rkst" name="TinkerBoard-Android/rkst" />
   <project path="sdk" name="TinkerBoard-Android/sdk" />
   <project path="system/bt" name="TinkerBoard-Android/system_bt" />
   <project path="system/ca-certificates" name="TinkerBoard-Android/system_ca-certificates" />
@@ -536,7 +536,7 @@
   <project path="system/connectivity/dhcp_client" name="TinkerBoard-Android/system_connectivity_dhcp_client" />
   <project path="system/connectivity/shill" name="TinkerBoard-Android/system_connectivity_shill" />
   <project path="system/core" name="TinkerBoard-Android/system_core" />
-  <project path="system/displayd" name="TinkerBoard-Android/rk_platform_system_displayd" />
+  <project path="system/displayd" name="TinkerBoard-Android/system_displayd" />
   <project path="system/extras" name="TinkerBoard-Android/system_extras" />
   <project path="system/firewalld" name="TinkerBoard-Android/system_firewalld" />
   <project path="system/gatekeeper" name="TinkerBoard-Android/system_gatekeeper" />
@@ -557,6 +557,6 @@
   <project path="tools/external/fat32lib" name="TinkerBoard-Android/tools_external_fat32lib" />
   <project path="tools/external/gradle" name="TinkerBoard-Android/tools_external_gradle" />
   <project path="tools/test/connectivity" name="TinkerBoard-Android/tools_test_connectivity" />
-  <project path="u-boot" name="TinkerBoard-Android/rk_u-boot" />
-  <project path="vendor/rockchip/common" name="TinkerBoard-Android/rk/platform_vendor_rockchip_common" />
+  <project path="u-boot" name="TinkerBoard-Android/u-boot" />
+  <!--project path="vendor/rockchip/common" name="TinkerBoard-Android/vendor_rockchip_common" /-->
 </manifest>
