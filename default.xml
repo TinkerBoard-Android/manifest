@@ -7,7 +7,7 @@
   <remote name="aosp"
           fetch="https://android.googlesource.com"
           review="https://android-review.googlesource.com/"
-          revision="refs/tags/android-7.1.1_r6"/>
+          revision="refs/tags/android-7.1.2_r39"/>
 
   <default revision="n-mr1-rk3288-tb"
 	   remote="github"
@@ -116,7 +116,6 @@
   <project path="external/droiddriver" name="TinkerBoard-Android/external_droiddriver" />
   <project path="external/e2fsprogs" name="TinkerBoard-Android/external_e2fsprogs" />
   <project path="external/easymock" name="TinkerBoard-Android/external_easymock" />
-  <!--project path="external/eclipse-basebuilder" name="TinkerBoard-Android/external_eclipse-basebuilder" /-->
   <project path="external/eclipse-windowbuilder" name="TinkerBoard-Android/external_eclipse-windowbuilder" />
   <project path="external/eigen" name="TinkerBoard-Android/external_eigen" />
   <project path="external/elfutils" name="TinkerBoard-Android/external_elfutils" />
@@ -137,7 +136,6 @@
   <project path="external/glide" name="TinkerBoard-Android/external_glide" />
   <project path="external/gmock" name="TinkerBoard-Android/external_gmock" />
   <project path="external/google-benchmark" name="TinkerBoard-Android/external_google-benchmark" />
-  <!--project path="external/google-breakpad" name="TinkerBoard-Android/external_google-breakpad" /-->
   <project path="external/google-fonts/carrois-gothic-sc" name="TinkerBoard-Android/external_google-fonts_carrois-gothic-sc" />
   <project path="external/google-fonts/coming-soon" name="TinkerBoard-Android/external_google-fonts_coming-soon" />
   <project path="external/google-fonts/cutive-mono" name="TinkerBoard-Android/external_google-fonts_cutive-mono" />
@@ -497,7 +495,6 @@
   <project path="prebuilts/clang/linux-x86/host/3.6" name="TinkerBoard-Android/prebuilts_clang_linux-x86_host_3.6" />
   <project path="prebuilts/deqp" name="TinkerBoard-Android/prebuilts_deqp" />
   <project path="prebuilts/devtools" name="TinkerBoard-Android/prebuilts_devtools" />
-  <!--project path="prebuilts/eclipse" name="TinkerBoard-Android/prebuilts_eclipse" /-->
   <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="TinkerBoard-Android/prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" name="TinkerBoard-Android/prebuilts_gcc_darwin-x86_arm_arm-eabi-4.8" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="TinkerBoard-Android/prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
@@ -525,9 +522,6 @@
   <project path="prebuilts/ninja/linux-x86" name="TinkerBoard-Android/prebuilts_ninja_linux-x86" />
   <project path="prebuilts/python/darwin-x86/2.7.5" name="TinkerBoard-Android/prebuilts_python_darwin-x86_2.7.5" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="TinkerBoard-Android/prebuilts_python_linux-x86_2.7.5" />
-  <!--project path="prebuilts/qemu-kernel" name="TinkerBoard-Android/prebuilts_qemu-kernel" /-->
-  <!--project path="prebuilts/sdk" name="TinkerBoard-Android/prebuilts_sdk" /-->
-  <!--project path="prebuilts/tools" name="TinkerBoard-Android/prebuilts_tools" /-->
   <project path="rkst" name="TinkerBoard-Android/rkst" />
   <project path="sdk" name="TinkerBoard-Android/sdk" />
   <project path="system/bt" name="TinkerBoard-Android/system_bt" />
@@ -559,4 +553,6 @@
   <project path="tools/test/connectivity" name="TinkerBoard-Android/tools_test_connectivity" />
   <project path="u-boot" name="TinkerBoard-Android/u-boot" />
   <!--project path="vendor/rockchip/common" name="TinkerBoard-Android/vendor_rockchip_common" /-->
+
+  <include name="aosp.xml" />
 </manifest>
