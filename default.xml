@@ -552,7 +552,7 @@
   <project path="tools/external/gradle" name="TinkerBoard-Android/tools_external_gradle" />
   <project path="tools/test/connectivity" name="TinkerBoard-Android/tools_test_connectivity" />
   <project path="u-boot" name="TinkerBoard-Android/u-boot" />
-  <!--project path="vendor/rockchip/common" name="TinkerBoard-Android/vendor_rockchip_common" /-->
+  <project path="vendor/rockchip/common" name="TinkerBoard-Android/vendor_rockchip_common" />
 
   <include name="aosp.xml" />
 </manifest>
