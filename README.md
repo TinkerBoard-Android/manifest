@@ -33,4 +33,4 @@ Please go to the following URL to download the SpiImageTools for Windows.
 
     https://github.com/rockchip-linux/tools/blob/master/windows/SpiImageTools_v1.44.zip
 
-Execute the file SpiImageTools.exe and click on the top-left button to load the file update.img. Then, click on the bottom-left button to generate the image which is able to be flashed to the board via UMS mode. The image is stored as data.in along with SpiImageTools.ext. 
+Execute the file SpiImageTools.exe and click on the top-left button to load the file update.img. Then, click on the bottom-left button to generate the image which is able to be flashed to the board via UMS mode. The image is stored as data.in along with the file SpiImageTools.exe.
