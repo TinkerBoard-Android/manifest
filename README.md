@@ -19,7 +19,7 @@ Then, you can issue the following command to donwload the source for Tinker Boar
 
 Go to to the directory where you have downloaded the souce and execute the script as the following. This will take a while to install the necessary packages on the host, build the Docker image, and start the container:
 
-    $ ./docker-builder/docker-builder-run.sh
+    $ ./docker_builder/docker-builder-run.sh
 
 Once it is done. You are in the shell of this newly started Docker container and you can execute the following script to build the Tinker Board (S) Android image.
 
